@@ -1,0 +1,33 @@
+.tabBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 102px;
+  display: flex;
+  background: #fff;
+  box-shadow: 0px -2px 6px 0px rgba(232,232,232,1);
+  border-radius: 40px 40px 0px 0px;
+  .tabBarItem {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .img {
+      width: 50px;
+      height: 50px;
+    }
+    .txt {
+      height: 24px;
+      line-height: 24px;
+      font-size: 20px;
+      margin-top: 6px;
+      color: #b091d2
+    }
+    .active {
+      color: #501098
+    }
+  }
+}
