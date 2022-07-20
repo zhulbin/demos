@@ -1,3 +1,6 @@
+const path = require('path')
+const fs = require('fs')
+
 const config = {
   projectName: 'mini-taro',
   date: '2022-7-14',
@@ -6,6 +9,9 @@ const config = {
     640: 2.34 / 2,
     750: 1,
     828: 1.81 / 2
+  },
+  alias: {
+    'src': path.resolve(fs.realpathSync(process.cwd()), 'src')
   },
   sourceRoot: 'src',
   outputRoot: 'dist',

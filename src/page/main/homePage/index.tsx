@@ -1,10 +1,12 @@
 import React from "react";
 import { View, Image, Text } from '@tarojs/components'
+import CustomTabBar from "../../business/customTabBar/index"
 import './index.scss'
 import BannerIcon from '../../../assets/images/banner.png'
 import headerIcon from '../../../assets/images/header.png'
 
 const HomePage: React.FC = () => {
+
   return (
     <>
       <View className="header">
@@ -27,6 +29,7 @@ const HomePage: React.FC = () => {
           <View></View>
         </View>
       </View>
+      <CustomTabBar current={0}></CustomTabBar>
     </>
   )
 }
